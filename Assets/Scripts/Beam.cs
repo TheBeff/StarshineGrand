@@ -10,6 +10,7 @@ public class Beam : MonoBehaviour {
 
         GameObject newStarBeam =
             Instantiate(starBeamPrefab, transform.position, Quaternion.identity) as GameObject;
+		newStarBeam.transform.SetParent (gameObject.transform);
 
 
     }
