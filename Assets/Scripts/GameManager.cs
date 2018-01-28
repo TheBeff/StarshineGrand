@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour {
 	public void activate(int starNum){
 		Debug.Log ("Activating star #" + starNum);
 		stars [starNum - 1].GetComponent<StarRotation> ().enabled = true;
-
+        stars[starNum - 1].transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+        stars[starNum - 1].transform.GetChild(0).GetComponent<BoxCollider>().enabled = true;
 	}
 
 	public void deactivate(int starNum){
