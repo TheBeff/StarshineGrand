@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114630058573707988}
   - component: {fileID: 120352674305017116}
   - component: {fileID: 54165520203810904}
+  - component: {fileID: 65689331031235882}
   m_Layer: 0
   m_Name: StarBeam
   m_TagString: Untagged
@@ -57,6 +58,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65689331031235882
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082516934880624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114630058573707988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,6 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8562582fe20cc42abb1d4eac8bf8c2cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BEAMSPEED: 3
 --- !u!120 &120352674305017116
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -82,7 +96,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 7ba8de9651adb0c4b919dda9748246af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,7 +121,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 1
+    widthMultiplier: 0.31
     widthCurve:
       serializedVersion: 2
       m_Curve:
