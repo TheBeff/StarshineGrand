@@ -5,19 +5,21 @@ using UnityEngine;
 public class Beam : MonoBehaviour {
 
     public GameObject starBeamPrefab;
+	public bool firing = false;
 
 	void Start () {
 
-        GameObject newStarBeam =
-            Instantiate(starBeamPrefab, transform.position, Quaternion.identity) as GameObject;
-		newStarBeam.transform.SetParent (gameObject.transform);
+	}
 
-
-    }
-	
 	// Update is called once per frame
 	void Update () {
+		if (firing) {
+			GameObject newStarBeam =
+				Instantiate (starBeamPrefab, transform.position, Quaternion.identity) as GameObject;
 
-        
+			newStarBeam.transform.SetParent (gameObject.transform);
+
+			//firing = false;
+		}
 	}
 }
