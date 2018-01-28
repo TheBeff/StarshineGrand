@@ -13,5 +13,6 @@ public class StarRotation : MonoBehaviour {
         {
             transform.Rotate(0, +90, 0);
         }
+			
 	}
 }
