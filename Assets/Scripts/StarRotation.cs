@@ -11,12 +11,12 @@ public class StarRotation : MonoBehaviour {
 
 		if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, +5, 0);
+            transform.Rotate(0, 0, +5);
         }
 
 		if (Input.GetKey(KeyCode.D))
 		{
-			transform.Rotate(0, -5, 0);
+			transform.Rotate(0, 0, -5);
 		}
 			
 	}
