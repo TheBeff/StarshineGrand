@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 
 	public void activate(int starNum){
 		Debug.Log ("Activating star #" + starNum);
-		stars [starNum - 1].GetComponent<StarRotation> ().enabled = true;
+		if(starNum != 10) stars [starNum - 1].GetComponent<StarRotation> ().enabled = true;
         stars[starNum - 1].transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
         stars[starNum - 1].transform.GetChild(0).GetComponent<BoxCollider>().enabled = true;
 	}
