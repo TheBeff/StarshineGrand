@@ -129,8 +129,8 @@ GameObject:
   - component: {fileID: 162548455}
   - component: {fileID: 162548454}
   - component: {fileID: 162548453}
-  - component: {fileID: 162548456}
   - component: {fileID: 162548457}
+  - component: {fileID: 162548456}
   m_Layer: 0
   m_Name: Beam 1
   m_TagString: Star1

@@ -13,14 +13,15 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void activate(int starNum){
-		Debug.Log ("activating star #" + starNum);
+		Debug.Log ("Activating star #" + starNum);
 		stars [starNum - 1].GetComponent<StarRotation> ().enabled = true;
 
 	}
 
 	public void deactivate(int starNum){
-		Debug.Log ("Deactivating " + starNum);
+		Debug.Log ("Deactivating star #" + starNum);
 		stars [starNum - 1].GetComponent<StarRotation> ().enabled = false;
+		stars [starNum - 1].GetComponentInChildren<BoxCollider> ().enabled = false;
 
 	}
 
